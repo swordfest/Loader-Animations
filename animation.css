@@ -1,0 +1,77 @@
+/*
+The CSS export should solely be used as a reference.
+For a more detailed animation export the JSON file should be used.
+*/
+#pildora {
+	transform: rotate(var(--fgmtn-rotation));
+	animation: pildora__rotation__1 200ms 0ms ease-in-out forwards,
+		pildora__rotation__2 200ms 200ms ease-in-out forwards,
+		spildora__rotation__3 400ms 400ms ease-in-out forwards,
+		pildora__rotation__4 200ms 800ms ease-in-out forwards,
+		pildora__rotation__5 200ms 1000ms ease-in-out forwards;
+}
+
+@keyframes pildora__rotation__1 {
+	from {
+		--fgmtn-rotation: 0deg;
+	}
+
+	to {
+		--fgmtn-rotation: -25deg;
+	}
+}
+@keyframes pildora__rotation__2 {
+	from {
+		--fgmtn-rotation: 25deg;
+	}
+
+	to {
+		--fgmtn-rotation: 0deg;
+	}
+}
+@keyframes pildora__rotation__3 {
+	from {
+		--fgmtn-rotation: 0deg;
+	}
+
+	to {
+		--fgmtn-rotation: -360deg;
+	}
+}
+@keyframes pildora__rotation__4 {
+	from {
+		--fgmtn-rotation: -360deg;
+	}
+
+	to {
+		--fgmtn-rotation: -375deg;
+	}
+}
+@keyframes pildora__rotation__5 {
+	from {
+		--fgmtn-rotation: -375deg;
+	}
+
+	to {
+		--fgmtn-rotation: -360deg;
+	}
+}
+
+#Vector {
+	transform: rotate(var(--fgmtn-rotation));
+	animation: Vector__rotation__1 1000ms 0ms linear forwards infinite;
+}
+
+@keyframes Vector__rotation__1 {
+	from {
+		--fgmtn-rotation: 0deg;
+	}
+
+	to {
+		--fgmtn-rotation: 0deg;
+	}
+}
+
+#pildora2 {
+	animation: transf;
+}
